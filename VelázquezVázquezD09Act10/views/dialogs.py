@@ -19,6 +19,9 @@ def _crear_tabla(columnas: List[str], filas: Iterable[Iterable]) -> QTableWidget
     tabla = QTableWidget(len(filas), len(columnas))
     tabla.setHorizontalHeaderLabels(columnas)
     tabla.setEditTriggers(QTableWidget.NoEditTriggers)
+    # Sin foco: si la tabla tuviera el foco, la busqueda por teclado de Qt se
+    # quedaria con la letra "C" y la ventana no se podria cerrar con esa tecla.
+    tabla.setFocusPolicy(Qt.NoFocus)
     tabla.setStyleSheet(ESTILO_ENCABEZADO_AZUL)
     for i, fila in enumerate(filas):
         for j, valor in enumerate(fila):
