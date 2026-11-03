@@ -33,3 +33,31 @@ Si quieres calcular capacidades
 Cuando hablamos de información
 ## Con Traslape
 Puede generar fragmentación de memoria
+
+10 registros, los registros son de longitud fija de 300 bytes
+300 * 10 / 512 = 6 aprox
+
+## Factor de intercalacion
+Los sectores no necesariamente están continuos.
+El factor de intercalación es un número que indica cuanta distancia hay entre sectores que son lógicamente continuos. La información está limitada al tamaño del buffer. Los sectores no están físicamente adyacentes
+
+## Factor de bloque
+Número de registros que caben en un bloque.
+
+## Planificación
+El SO es el responsable de usar el HW de forma eficiente. El tiempo de acceso se basa en búsqueda y latencia.
+
+# ALGORITMOS DE PLANIFICACION
+## FIFO (FCFS)
+// COMPLETAR
+## SSTF (PRIMERO EL MAS CORTO)
+Se eligen las solicitudes de E/S a disco que requiere el menor movimiento posible del brazo del disco desde su posición actual, Puede causar inanisión
+
+## SCAN (ASCENSOR)
+El brazo solo se puede mover en un sentido, resolviendo todas las peticiones pendientes de su ruta, hasta que alcance la última pista.
+
+## C-SCAN (ASCENSOR CICLICO)
+Es una variante del ascensor, restringe el acceso en una sola dirección. Trata a los cilindros como si fuese una lista circular
+
+## Algoritmo de prioridades
+Cada proceso esta asociado a una prioridad
