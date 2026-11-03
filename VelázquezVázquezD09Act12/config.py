@@ -1,6 +1,6 @@
 """Constantes del Programa 6: Productor-Consumidor."""
 
-CAPACIDAD = 18                 # Casillas del contenedor (buffer circular acotado)
+CAPACIDAD = 20                 # Casillas del contenedor (buffer circular acotado)
 MIN_ELEMENTOS = 3              # Elementos minimos por entrada al contenedor
 MAX_ELEMENTOS = 6              # Elementos maximos por entrada al contenedor
 SUENO_MIN = 3                  # Unidades de tiempo minimas dormido
