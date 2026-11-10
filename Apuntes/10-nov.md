@@ -14,3 +14,9 @@ Se realizó una modificación del programa en moodle.
 * Mostrar el tiempo que se está incrementando -> Espera
 * Lllegada + Espera + Servicio = Contador global
 * Programa termina cuando todos los procesos hayan finalizado 
+
+# Fechas
+* 11 de dic fecha limite de ordinario
+* Esta materia no tiene extraordinario
+* Este programa máximo inicios de diciembre
+* El examen es aprox el 27 de nov
